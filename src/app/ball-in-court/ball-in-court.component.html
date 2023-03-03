@@ -1,0 +1,32 @@
+<div class="ball_in_court">
+    <div class="program_dropDown">
+
+
+        <form action="#">
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Program
+                </button>
+                <div class="dropdown-menu" aria-labelledby="program-dropdown">
+                <label for="prog-check" *ngFor="let prog of programData.virtualProgramList" >
+                    <input type="checkbox" name="prog-check"[value]="prog.programName" (click)="showList(prog.programId)">{{ prog.programName }}
+                </label>
+                </div>
+              </div>
+        </form>
+
+    </div>
+    <div class="project_dropDown">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Select Project
+            </button>
+            <div class="dropdown-menu" aria-labelledby="program-dropdown">
+            <label for="prog-check" *ngFor="let prog of d" >
+                <input type="checkbox" name="prog-check"[value]="prog">{{ prog }}
+            </label>
+            </div>
+          </div>
+    </div>
+</div>
