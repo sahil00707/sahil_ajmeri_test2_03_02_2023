@@ -23,7 +23,7 @@
                 Select Project
             </button>
             <div class="dropdown-menu" aria-labelledby="program-dropdown">
-            <label for="prog-check" *ngFor="let prog of d" >
+            <label for="prog-check" *ngFor="let prog of projectList" >
                 <input type="checkbox" name="prog-check"[value]="prog">{{ prog }}
             </label>
             </div>

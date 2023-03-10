@@ -1,4 +1,16 @@
 .ball_in_court{
     display: flex;
     justify-content: center;
+    .program_dropDown{
+        background-color: cadetblue;
+        color: white;
+        padding: 10px 25px;
+        margin: 10px;
+    }
+    .project_dropDown{
+        background-color: brown;
+        color: white;
+        padding: 10px 25px;
+        margin: 10px;
+    }
 }
